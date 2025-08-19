@@ -32,7 +32,7 @@ metadata:
   name: job-with-always
 spec:
   image: nginx:1.9.1   # [required] 完整的镜像名 name:tag
-  parallelism: 10      # [optional] 最大并发拉取的节点梳理, 默认为 1
+  parallelism: 10      # [optional] 最大并发拉取的节点数量, 默认为 1
   selector:            # [optional] 指定节点的 名字列表 或 标签选择器 (只能设置其中一种)
     names:
     - node-1
